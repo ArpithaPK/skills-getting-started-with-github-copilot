@@ -1,3 +1,28 @@
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.participant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.delete-icon {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -72,6 +97,46 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+/* New: participants section styles */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-title {
+  font-weight: bold;
+  color: #1a237e;
+  margin-bottom: 8px;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participant {
+  background: linear-gradient(180deg, #e8f0ff 0%, #dbe9ff 100%);
+  color: #0d47a1;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: 1px solid #cfe0ff;
+  box-shadow: 0 1px 0 rgba(13, 71, 161, 0.05);
+}
+
+.no-participants {
+  color: #757575;
+  background: transparent;
+  padding: 4px 0;
+  border-radius: 0;
+  font-style: italic;
 }
 
 .form-group {
